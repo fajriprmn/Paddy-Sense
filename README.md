@@ -48,11 +48,9 @@ flutter pub run build_runner build
 
 4. Configure Hugging Face API
    - Create a `.env` file in the root directory
-   - Add your Hugging Face API token:
-   ```
-   HF_API_TOKEN=your_token_here
-   MODEL_ID=your_model_id_here
-   ```
+   - Add the Space prediction endpoint:
+```HF_ENDPOINT=https://huggingface.co/spaces/Woyazee/padi-mobilenetv3/predict```
+> Note: This project uses Hugging Face Spaces which is publicly accessible, so **no API token is required**.
 
 5. Run the app
 ```bash
