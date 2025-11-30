@@ -32,7 +32,7 @@ Rice Leaf Disease Detection Application using MobileNetV3 and Hugging Face Infer
 
 1. Clone the repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/<username>/paddy-sense.git
 cd paddy_sense
 ```
 
