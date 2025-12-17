@@ -39,10 +39,6 @@ class HomeScreen extends StatelessWidget {
                 text: AppStrings.navDashboard,
               ),
               Tab(
-                icon: Icon(Icons.camera_alt_outlined),
-                text: AppStrings.navCamera,
-              ),
-              Tab(
                 icon: Icon(Icons.history),
                 text: AppStrings.navHistory,
               ),
