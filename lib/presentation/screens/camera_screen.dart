@@ -156,7 +156,7 @@ class _CameraScreenState extends ConsumerState<CameraScreen> {
                       IconButton(
                         icon: const Icon(Icons.close, color: Colors.white),
                         onPressed: () {
-                          DefaultTabController.of(context).animateTo(0);
+                          Navigator.pop(context);
                         },
                       ),
                       IconButton(
