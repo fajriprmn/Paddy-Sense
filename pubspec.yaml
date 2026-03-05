@@ -43,6 +43,11 @@ dev_dependencies:
   flutter_lints: ^3.0.0
   hive_generator: ^2.0.1
   build_runner: ^2.4.7
+  flutter_launcher_icons: "^0.14.4"
+
+flutter_launcher_icons:
+  android: true
+  image_path: "assets/icon/logo.png"
 
 dependency_overrides:
   flutter_plugin_android_lifecycle: 2.0.17
