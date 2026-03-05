@@ -221,8 +221,7 @@ class ResultScreen extends ConsumerWidget {
                         child: ElevatedButton(
                           onPressed: () {
                             ref.read(detectionProvider.notifier).reset();
-                            Navigator.pop(context);
-                            DefaultTabController.of(context).animateTo(0);
+                            Navigator.of(context).popUntil((route) => route.isFirst);
                           },
                           child: const Text(AppStrings.ok),
                         ),

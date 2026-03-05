@@ -8,6 +8,7 @@ import '../providers/detection_provider.dart';
 import '../widgets/stat_card.dart';
 import '../widgets/detection_card.dart';
 import '../widgets/empty_state.dart';
+import 'camera_screen.dart';
 
 class DashboardScreen extends ConsumerWidget {
   const DashboardScreen({super.key});
@@ -96,7 +97,7 @@ class DashboardScreen extends ConsumerWidget {
                   TextButton(
                     onPressed: () {
                       // Navigate to history screen
-                      DefaultTabController.of(context).animateTo(2);
+                      DefaultTabController.of(context).animateTo(1);
                     },
                     child: const Text(AppStrings.viewAll),
                   ),
@@ -147,7 +148,12 @@ class DashboardScreen extends ConsumerWidget {
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
           // Navigate to camera screen
-          DefaultTabController.of(context).animateTo(1);
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const CameraScreen(),
+            ),
+          );
         },
         icon: const Icon(Icons.camera_alt),
         label: const Text(AppStrings.startDetection),

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../core/constants/app_strings.dart';
 import 'dashboard_screen.dart';
-import 'camera_screen.dart';
 import 'history_screen.dart';
 import 'library_screen.dart';
 
@@ -11,13 +10,12 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 4,
+      length: 3,
       child: Scaffold(
         body: const TabBarView(
           physics: NeverScrollableScrollPhysics(),
           children: [
             DashboardScreen(),
-            CameraScreen(),
             HistoryScreen(),
             LibraryScreen(),
           ],
